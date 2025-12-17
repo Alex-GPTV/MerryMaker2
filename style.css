@@ -191,6 +191,10 @@ a:visited {
     width: calc(var(--avw) * 3.2);
 }
 
+.details .makerInfo a {
+    z-index: 5
+}
+
 .details .levelText {
     width: calc(var(--avw) * 18);
     margin-left: calc(var(--avw) * 10);
