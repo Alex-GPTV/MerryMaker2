@@ -106,7 +106,10 @@ body.addEventListener("mousedown", (e) => {
 });
 
 body.addEventListener("touchend", (e) => {
-    e.preventDefault();
+    if(e.target.nodeName.toLowerCase() !== "a") {
+        console.log(e.target.nodeName.toLowerCase() !== "a");
+        e.preventDefault();
+    }
     end_input(e);
 });
 body.addEventListener("mouseup", (e) => {
